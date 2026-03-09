@@ -3,7 +3,7 @@ services:
     name: partsland-api
     env: node
     plan: free
-    buildCommand: npm install && npx playwright install chromium --with-deps
+    buildCommand: npm install
     startCommand: node server.js
     envVars:
       - key: PORT
